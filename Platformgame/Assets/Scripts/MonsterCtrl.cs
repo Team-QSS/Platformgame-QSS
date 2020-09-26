@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Windows.Speech;
 
-public class Monster : MonoBehaviour
+// written by Lim Yeonsang
+public class MonsterCtrl : MonoBehaviour
 {
-    bool canMove = true;
+    private bool _canMove = true;
 
     private float mobspeed = 1.5f; //몬스터 속도
     private Vector3 direction;
+
     void Start()
     {
         direction = new Vector3(0, 1, 0);
@@ -16,16 +18,16 @@ public class Monster : MonoBehaviour
 
     IEnumerator CantMove()
     {
-        canMove = false;
+        _canMove = false;
         yield return new WaitForSeconds(0.5f);
-        canMove = true;
+        _canMove = true;
     }
 
     //몬스터움직임
     void FixedUpdate()
     {
-        if(canMove)
-        transform.Translate(direction * (mobspeed * Time.deltaTime));     
+        if (_canMove)
+            transform.Translate(direction * (mobspeed * Time.deltaTime));
     }
 
     //몬스터와 닿은 플레이어 사망  
@@ -37,9 +39,7 @@ public class Monster : MonoBehaviour
         if (col.gameObject.tag.Equals("Scaffolding"))
             Destroy(col.gameObject);
 
-        if (col.gameObject.tag.Equals("Bomb")) {
+        if (col.gameObject.tag.Equals("Bomb"))
             StartCoroutine(CantMove());
-        }
-            
     }
 }
