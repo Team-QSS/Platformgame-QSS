@@ -24,5 +24,15 @@ public class CameraCtrl : MonoBehaviour
         _followObjectY = _objectToFollowTransform.position.y;
         _transform.position = Vector3.Lerp(_transform.position, new Vector3(_transform.position.x, _followObjectY,
             -10), moveSpeed * Time.deltaTime);
+
+        if (objectToFollow == null)
+        {
+            GameOver();
+        }
+    }
+
+    private void GameOver()
+    {
+        //게임 끝내기
     }
 }

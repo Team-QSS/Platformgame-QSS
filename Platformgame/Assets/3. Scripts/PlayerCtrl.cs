@@ -81,7 +81,7 @@ public class PlayerCtrl : MonoBehaviour
 
     }
 
-    private void OnTriggerStay2D(Collider2D other)
+    private void OnCollisionStay2D(Collision2D other)
     {
         if (other.gameObject.CompareTag("Scaffolding"))
         {
@@ -89,7 +89,7 @@ public class PlayerCtrl : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit2D(Collider2D other)
+    private void OnCollisionExit2D(Collision2D other)
     {
         if (other.gameObject.CompareTag("Scaffolding"))
         {

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Windows.Speech;
@@ -29,18 +30,21 @@ public class MonsterCtrl : MonoBehaviour
     //플레이어, 발판과 닿을 경우 닿은 오브젝트 삭제, 장애물과 닿을 경우 몬스터가 잠깐 멈춤 
     void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.gameObject.tag.Equals("Player"))
+        if (col.CompareTag("Player"))
         {
+            Debug.Log($"player : {col.name}");
             Destroy(col.gameObject);
         }
 
-        if (col.gameObject.tag.Equals("Scaffolding"))
+        if (col.CompareTag("Scaffolding"))
         {
+            Debug.Log($"scaffolding : {col.name}");
             Destroy(col.gameObject);
         }
 
-        if (col.gameObject.CompareTag("Bomb"))
+        if (col.CompareTag("Bomb"))
         {
+            Debug.Log($"bomb : {col.name}");
             StartCoroutine(MakeCanNotMove());
         }
     }
