@@ -251,6 +251,14 @@ PrefabInstance:
       propertyPath: gotJumpBarSprite
       value: 
       objectReference: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4879560842991779960, guid: 180cc46bf8c779a42bed91b112056c36, type: 3}
+      propertyPath: jumpForceMax
+      value: 6.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4879560842991779960, guid: 180cc46bf8c779a42bed91b112056c36, type: 3}
+      propertyPath: jumpChargeSpeed
+      value: 0.03
+      objectReference: {fileID: 0}
     - target: {fileID: 5746698226847438491, guid: 180cc46bf8c779a42bed91b112056c36, type: 3}
       propertyPath: intervalX
       value: 3
