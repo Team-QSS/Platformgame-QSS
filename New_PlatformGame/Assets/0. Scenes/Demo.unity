@@ -161,10 +161,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7f999da318e2564eb9fedec7faa03f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
   jumpForceMax: 5
   gotJumpBarSprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   jumpChargeSpeed: 0.03
   xMoveSpeed: 0.05
+=======
+  jumpForceMax: 200
+  gotJumpBarSprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  jumpChargeSpeed: 3
+  jumpBarLength: 1
+  xMoveSpeed: 5
+  xMoveSpeedFly: 1
+  jumpBarPositionX: 1
+  jumpBarPositionY: 1
+>>>>>>> Stashed changes
 --- !u!114 &229245263
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -178,9 +189,63 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scaffolding: {fileID: 3867693876488077505}
+<<<<<<< Updated upstream
   intervalX: 0
   MissileReferenceTime: 0
   Missile: {fileID: 1289574116}
+=======
+  intervalX: 3
+  MissileReferenceTime: 5
+  Missile: {fileID: 1289574116}
+--- !u!1 &690079164 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1940362156129404839, guid: bbc39554f8ef53d4093c48bfbc825d7c, type: 3}
+  m_PrefabInstance: {fileID: 1940362156371704111}
+  m_PrefabAsset: {fileID: 0}
+--- !u!66 &690079169
+CompositeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 690079164}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_GeometryType: 0
+  m_GenerationType: 0
+  m_EdgeRadius: 0
+  m_ColliderPaths: []
+  m_CompositePaths:
+    m_Paths: []
+  m_VertexDistance: 0.0005
+  m_OffsetDistance: 0.00005
+--- !u!50 &690079170
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 690079164}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+>>>>>>> Stashed changes
 --- !u!1 &754513774 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6081379693166491031, guid: 16d49d1dde2c39b4cb96129a536ef337, type: 3}
@@ -330,8 +395,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster
       objectReference: {fileID: 0}
+<<<<<<< Updated upstream
     m_RemovedComponents:
     - {fileID: 6786327490742105697, guid: bbc39554f8ef53d4093c48bfbc825d7c, type: 3}
+=======
+    m_RemovedComponents: []
+>>>>>>> Stashed changes
   m_SourcePrefab: {fileID: 100100000, guid: bbc39554f8ef53d4093c48bfbc825d7c, type: 3}
 --- !u!1001 &2667181614218956283
 PrefabInstance:
@@ -411,6 +480,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7700327072032568968, guid: 596c84f3a885cec4b8d1a8d2548313a1, type: 3}
       propertyPath: m_IsActive
+<<<<<<< Updated upstream
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7976498166111858805, guid: 596c84f3a885cec4b8d1a8d2548313a1, type: 3}
@@ -420,6 +490,17 @@ PrefabInstance:
     - target: {fileID: 7976498166111858805, guid: 596c84f3a885cec4b8d1a8d2548313a1, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
+=======
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7976498166111858805, guid: 596c84f3a885cec4b8d1a8d2548313a1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 7976498166111858805, guid: 596c84f3a885cec4b8d1a8d2548313a1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.81
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 7976498166111858805, guid: 596c84f3a885cec4b8d1a8d2548313a1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -533,6 +614,7 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+<<<<<<< Updated upstream
     - target: {fileID: 6277146071714996372, guid: 924272ee8ce1aa94db6a08c8ab540a0c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -540,6 +622,23 @@ PrefabInstance:
     - target: {fileID: 6277146071714996372, guid: 924272ee8ce1aa94db6a08c8ab540a0c, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
+=======
+    - target: {fileID: 3544164576224076751, guid: 924272ee8ce1aa94db6a08c8ab540a0c, type: 3}
+      propertyPath: MissileReferenceTime
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3544164576224076751, guid: 924272ee8ce1aa94db6a08c8ab540a0c, type: 3}
+      propertyPath: _bombSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6277146071714996372, guid: 924272ee8ce1aa94db6a08c8ab540a0c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 6277146071714996372, guid: 924272ee8ce1aa94db6a08c8ab540a0c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.29
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 6277146071714996372, guid: 924272ee8ce1aa94db6a08c8ab540a0c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -556,12 +655,21 @@ PrefabInstance:
     - target: {fileID: 6277146071714996372, guid: 924272ee8ce1aa94db6a08c8ab540a0c, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
+<<<<<<< Updated upstream
       objectReference: {fileID: 0}
     - target: {fileID: 6277146071714996372, guid: 924272ee8ce1aa94db6a08c8ab540a0c, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6277146071714996372, guid: 924272ee8ce1aa94db6a08c8ab540a0c, type: 3}
+=======
+      objectReference: {fileID: 0}
+    - target: {fileID: 6277146071714996372, guid: 924272ee8ce1aa94db6a08c8ab540a0c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6277146071714996372, guid: 924272ee8ce1aa94db6a08c8ab540a0c, type: 3}
+>>>>>>> Stashed changes
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
@@ -583,7 +691,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6277146071714996377, guid: 924272ee8ce1aa94db6a08c8ab540a0c, type: 3}
       propertyPath: m_IsActive
+<<<<<<< Updated upstream
       value: 0
+=======
+      value: 1
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 924272ee8ce1aa94db6a08c8ab540a0c, type: 3}
