@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
     
     public float MissileReferenceTime; //미사일 생성 주기
     public GameObject Missile; //미사일 프리팹
+    public GameObject MissileSpawn;// 미사일 스폰 프리팹
     
     private Vector3 MissileRespawn;//미사일을 생성하는 곳의 좌표
     private float MissileTime;//미사일 생성 쿨타임
@@ -51,7 +52,10 @@ public class GameManager : MonoBehaviour
         MissileTime += Time.deltaTime;
         if (MissileTime > MissileReferenceTime)
         {
-            MissileSummoning();
+            CameraPositionTopRight = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
+            MissileRespawn = new Vector3(Random.Range(CameraPositionBottomLeft.x, CameraPositionTopRight.x), CameraPositionTopRight.y,0);
+            Instantiate(MissileSpawn, MissileRespawn, Quaternion.identity);
+            Invoke("MissileSummoning", 3);
             MissileTime = 0;
         }
     }
@@ -61,7 +65,7 @@ public class GameManager : MonoBehaviour
     {
         _randomXVector3.y += intervalY;
         _randomXVector3.x = Random.Range(CameraPositionBottomLeft.x, CameraPositionTopRight.x);
-        while (!(prevX <= _randomXVector3.x - intervalX || prevX >= _randomXVector3.x + intervalX))
+        while (!(prevX <= _randomXVector3.x - intervalX || prevX >= _randomXVector3.x + intervalX) || (prevX - _randomXVector3.x >= 8 || _randomXVector3.x - prevX >= 8))
         {
             _randomXVector3.x = Random.Range(CameraPositionBottomLeft.x, CameraPositionTopRight.x);
         }
@@ -72,8 +76,7 @@ public class GameManager : MonoBehaviour
     
     void MissileSummoning() //미사일 생성
     {
-        CameraPositionTopRight = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width,Screen.height, 0));
-        MissileRespawn = new Vector3(Random.Range(CameraPositionBottomLeft.x, CameraPositionTopRight.x), CameraPositionTopRight.y,0);
-        Instantiate(Missile, MissileRespawn, Quaternion.identity);
+        CameraPositionTopRight = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
+        Instantiate(Missile, new Vector3(MissileRespawn.x, CameraPositionTopRight.y, 0), Quaternion.identity);
     }
 }
