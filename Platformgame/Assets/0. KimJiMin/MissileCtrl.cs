@@ -1,3 +1,4 @@
+
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -9,7 +10,6 @@ public class MissileCtrl : MonoBehaviour
     public float _bombSpeed; //미사일 속도
     public float MissileReferenceTime; //미사일 생성 주기
     public GameObject Missile; //미사일 프리팹
-    
     private readonly Vector3 _direction = Vector3.down;
 
     //미사일움직임

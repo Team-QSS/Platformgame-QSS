@@ -43,7 +43,6 @@ public class GameManager : MonoBehaviour
             SpawnScaffolding();
         }
     }
-
     private void FixedUpdate()
     {
         MissileTime += Time.deltaTime;
