@@ -121,6 +121,7 @@ MonoBehaviour:
   _bombSpeed: 0
   MissileReferenceTime: 0
   Missile: {fileID: 6277146071714996377}
+  _player: {fileID: 6570863873215376077, guid: 2a653eabf3c66ce43be8e1ad95d6b89f, type: 3}
 --- !u!61 &1234245847132002630
 BoxCollider2D:
   m_ObjectHideFlags: 0

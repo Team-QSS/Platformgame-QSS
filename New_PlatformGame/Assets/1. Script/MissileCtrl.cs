@@ -21,7 +21,9 @@ public class MissileCtrl : MonoBehaviour
     //미사일과 닿은 플레이어 사망
     void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.gameObject.tag.Equals("Player"))
+        if (col.gameObject.CompareTag("Player"))
+        {
             Destroy(col.gameObject);
+        }
     }
 }

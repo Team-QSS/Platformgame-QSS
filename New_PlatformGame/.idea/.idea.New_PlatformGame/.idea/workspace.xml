@@ -20,11 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8960b54-a90d-4de4-b602-602f2349088b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.New_PlatformGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.New_PlatformGame/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.New_PlatformGame/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.New_PlatformGame/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.New_PlatformGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.New_PlatformGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/0. Scenes/Demo.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/0. Scenes/Demo.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/1. Script/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1. Script/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1. Script/MissileCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1. Script/MissileCtrl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2. prefab/Missile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/2. prefab/Missile.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,16 +36,20 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/1. Script/CameraCtrl.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1. Script/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1. Script/MissileCtrl.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1. Script/MissileSpawn.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/1. Script/New_Player_Ctrl.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A9810827-DCE3-444A-8E5C-4E9F3F5E0828/f7/c73f0a5b/PlayerPrefs.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/NewPlayerMovement.cs" />
-        <option value="$PROJECT_DIR$/Assets/1. Script/MissileCtrl.cs" />
         <option value="$PROJECT_DIR$/Assets/1. Script/MissileSpawn.cs" />
+        <option value="$PROJECT_DIR$/Assets/1. Script/New_Player_Ctrl.cs" />
+        <option value="$PROJECT_DIR$/Assets/1. Script/MissileCtrl.cs" />
         <option value="$PROJECT_DIR$/Assets/1. Script/GameManager.cs" />
       </list>
     </option>
@@ -65,6 +70,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="CodeLensConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -97,6 +103,9 @@
       <workItem from="1603872209446" duration="2128000" />
       <workItem from="1603875522679" duration="168000" />
       <workItem from="1603878016721" duration="1712000" />
+      <workItem from="1604478061085" duration="595000" />
+      <workItem from="1604485934393" duration="210000" />
+      <workItem from="1605685744353" duration="5340000" />
     </task>
     <servers />
   </component>
@@ -121,6 +130,10 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="703" y="82" key="SettingsEditor" timestamp="1605685818809">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="703" y="82" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1605685818809" />
     <state x="551" y="132" width="974" height="1047" key="dock-window-1" timestamp="1603875647734">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
