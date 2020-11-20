@@ -15,11 +15,14 @@
           <e p="PlayerCtrl.cs" t="Include" />
           <e p="PlayerCtrlToDemo.cs" t="Include" />
         </e>
+        <e p="BlurShader.shader" t="Include" />
         <e p="NewPlayerMovement.cs" t="Include" />
+        <e p="PauseButtonScript.cs" t="Include" />
+        <e p="UIScript.cs" t="Include" />
       </e>
       <e p="New_PlatformGame.sln" t="IncludeFlat" />
       <e p="obj" t="ExcludeRecursive" />
-      <e p="Packages" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
       <e p="Temp\bin" t="ExcludeRecursive" />
     </e>
   </component>

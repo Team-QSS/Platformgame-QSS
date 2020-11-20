@@ -20,10 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8960b54-a90d-4de4-b602-602f2349088b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.New_PlatformGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.New_PlatformGame/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.New_PlatformGame/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.New_PlatformGame/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.New_PlatformGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.New_PlatformGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.New_PlatformGame/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.New_PlatformGame/riderModule.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/0. Scenes/Demo.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/0. Scenes/Demo.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2. prefab/Monster.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/2. prefab/Monster.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2. prefab/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/2. prefab/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2. prefab/PlayerToDemo.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/2. prefab/PlayerToDemo.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1. Script/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1. Script/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1. Script/MonsterCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1. Script/MonsterCtrl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2. prefab/Scaffolding.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/2. prefab/Scaffolding.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NewPlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewPlayerMovement.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,11 +38,27 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/1. Script/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/1. Script/CameraCtrl.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/NewPlayerMovement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/1. Script/MissileCtrl.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/1. Script/MonsterCtrl.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../UnityProject/TEST/Assets/Portal/OrangePortal.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/UIScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/PauseButtonScript.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/NewPlayerMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/1. Script/MissileCtrl.cs" />
+        <option value="$PROJECT_DIR$/Assets/1. Script/MonsterCtrl.cs" />
+        <option value="$PROJECT_DIR$/Assets/BlurShader.shader" />
+        <option value="$PROJECT_DIR$/Assets/PauseButtonScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/1. Script/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/UIScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/1. Script/New_Player_Ctrl.cs" />
+        <option value="$PROJECT_DIR$/Assets/NewPlayerMovement.cs" />
       </list>
     </option>
   </component>
@@ -82,6 +103,8 @@
       <option name="presentableId" value="Default" />
       <updated>1602671298967</updated>
       <workItem from="1602671303602" duration="896000" />
+      <workItem from="1604476097225" duration="5045000" />
+      <workItem from="1605685578753" duration="12061000" />
     </task>
     <servers />
   </component>
@@ -100,8 +123,23 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="92" y="92" width="1736" height="896" key="VCS.FileHistoryDialog" timestamp="1605854401859">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="92" y="92" width="1736" height="896" key="VCS.FileHistoryDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1605854401859" />
+    <state x="552" y="272" key="Vcs.Push.Dialog.v2" timestamp="1605771882842">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="552" y="272" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1605771882842" />
+    <state x="616" y="250" key="run.anything.popup" timestamp="1605855200847">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="616" y="250" key="run.anything.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1605855200847" />
   </component>
 </project>
