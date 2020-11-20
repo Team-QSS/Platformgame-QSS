@@ -12,14 +12,14 @@ GameObject:
   - component: {fileID: 6212210937411449641}
   - component: {fileID: 1643468377201683462}
   - component: {fileID: 8162619790718741385}
-  - component: {fileID: 7177485025109407165}
+  - component: {fileID: 66624628}
   m_Layer: 0
   m_Name: PlayerToDemo
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6875697752758230163
 Transform:
   m_ObjectHideFlags: 0
@@ -114,7 +114,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 10
---- !u!114 &7177485025109407165
+--- !u!114 &66624628
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -127,6 +127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scaffolding: {fileID: 7700327072032568968, guid: 596c84f3a885cec4b8d1a8d2548313a1, type: 3}
-  intervalX: 0
-  MissileReferenceTime: 0
-  Missile: {fileID: 0}
+  intervalX: 5
+  MissileReferenceTime: 1
+  Missile: {fileID: 6277146071714996377, guid: 924272ee8ce1aa94db6a08c8ab540a0c, type: 3}
+
