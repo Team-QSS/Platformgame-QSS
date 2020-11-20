@@ -9,6 +9,10 @@ using Random = UnityEngine.Random;
 // written by Kim Jimin
 public class GameManager : MonoBehaviour
 {
+    private const int _coinCost = 10 ; //코인 단위
+    private int _getCoin; //플레이어가 얻은 코인
+    private int _coin; //플레이어가 지니고 있는 총 코인 
+
     private Text _bestScore;//최고기록
     private Text _myScore;//내 기록
     
@@ -46,6 +50,8 @@ public class GameManager : MonoBehaviour
         _maxScore = PlayerPrefs.GetInt("Best Score", 0);
         _bestScore = GameObject.Find("BestScore").GetComponent<Text>();
         _myScore = GameObject.Find("MyScore").GetComponent<Text>();
+        _coin = PlayerPrefs.GetInt("Coin", 0);
+        _getCoin = 0;
     }
 
     void Update()
@@ -108,7 +114,7 @@ public class GameManager : MonoBehaviour
 
     void SaveScore()
     {
-        _maxScore = (int) (_score - _palyerStartY);
+        _maxScore = (int) (_score - _palyerStartY + 1);
         PlayerPrefs.SetInt("Best Score", _maxScore);
     }
 
@@ -116,5 +122,26 @@ public class GameManager : MonoBehaviour
     {
         _bestScore.text = "Best Score: " + _maxScore.ToString();
         _myScore.text = "Score: " + _score.ToString();
+    }
+
+    void ScoreInit()
+    {
+        _maxScore = 0;
+        PlayerPrefs.SetInt("Best Score", _maxScore);
+    }
+    
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Coin"))
+        {
+            _getCoin += _coinCost;
+            Destroy(other.gameObject);
+        }
+    }
+
+    private void SaveCoin()
+    {
+        _coin += _getCoin;
+        PlayerPrefs.SetInt("Coin", _coin);
     }
 }

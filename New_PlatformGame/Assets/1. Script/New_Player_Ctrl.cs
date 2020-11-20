@@ -96,9 +96,7 @@ public class NewPlayerCtrl : MonoBehaviour
         }
         else if (!_canJump && (int)_xMove != (int)_direction) //차징중이 아닐때 하늘에 떠있을 때 && 누르는 방향이 점프한 방향과 반대 방향일때
         {
-            Debug.Log("on");
             _rigidbody2D.AddForce(new Vector2(_xMove * xMoveSpeedFly,0));
-            Debug.Log(_xMove);
         }
     }
 
