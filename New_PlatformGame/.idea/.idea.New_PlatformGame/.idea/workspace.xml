@@ -20,10 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7a2b745f-4494-4e81-9159-2946859a6b6b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../GameDesign.md" beforeDir="false" afterPath="$PROJECT_DIR$/../GameDesign.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/1. Script/.idea/.idea.1. Script.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1. Script/.idea/.idea.1. Script.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../앞으로 해야 하는 것.md" beforeDir="false" afterPath="$PROJECT_DIR$/../앞으로 해야 하는 것.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.New_PlatformGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.New_PlatformGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/0. Scenes/0. Title_Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/0. Scenes/0. Title_Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1. Script/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1. Script/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1. Script/UIFunction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1. Script/UIFunction.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,9 +33,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../../Study_etc/Unity기초/DummyProject/Assets/1.Script/Player_ctrl.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../Study_etc/Unity기초/DummyProject/Assets/1.Script/GameManager.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/Assets/1. Script/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/1. Script/UIFunction.cs" />
       </list>
     </option>
@@ -86,7 +91,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1605863909861</updated>
-      <workItem from="1605863921746" duration="2571000" />
+      <workItem from="1605863921746" duration="4473000" />
+      <workItem from="1605955924811" duration="412000" />
     </task>
     <servers />
   </component>
@@ -105,6 +111,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
