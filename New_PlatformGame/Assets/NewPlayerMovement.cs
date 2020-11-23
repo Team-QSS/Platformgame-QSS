@@ -70,8 +70,8 @@ public class NewPlayerMovement : MonoBehaviour
 //땅에서 벗어나면 점프할 수 없다
     private void OnCollisionStay2D(Collision2D other)
     {
-        if (other.gameObject.CompareTag("Scaffolding"))
-        {   
+        if (other.gameObject.CompareTag("Scaffolding") && _rigidbody2D.velocity.y <= 0)
+        {
             _canJump = true;
         }
     }
@@ -112,7 +112,10 @@ public class NewPlayerMovement : MonoBehaviour
             SetjumpForce();
             _direction = Input.GetAxis("Horizontal");
             _isCharge = true;
-            _rigidbody2D.velocity = Vector2.zero;
+            Vector3 v = _rigidbody2D.velocity;
+            v.x = 0;
+            v.z = 0;
+            _rigidbody2D.velocity = v;
         }
 
         if (Input.GetKeyUp(KeyCode.Space))

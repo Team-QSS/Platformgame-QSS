@@ -91,7 +91,6 @@ public class GameManager : MonoBehaviour
         {
             score = (int) (transform.position.y - _playerStartYPos);
         }
-        Debug.Log(score);
     }
     
 }
