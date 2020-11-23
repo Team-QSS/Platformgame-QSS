@@ -1489,7 +1489,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1940362156129404837, guid: bbc39554f8ef53d4093c48bfbc825d7c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.63
       objectReference: {fileID: 0}
     - target: {fileID: 1940362156129404837, guid: bbc39554f8ef53d4093c48bfbc825d7c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1781,7 +1781,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6875697752758230163, guid: 96f56e29f9cbd7842ad1f8ea827e0c1e, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6875697752758230163, guid: 96f56e29f9cbd7842ad1f8ea827e0c1e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1798,7 +1798,7 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 7177485025109407165, guid: 96f56e29f9cbd7842ad1f8ea827e0c1e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 96f56e29f9cbd7842ad1f8ea827e0c1e, type: 3}
---- !u!1001 &6277146072575047293
+--- !u!1001 &6570863873305947008
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1892,7 +1892,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6570863873215376077, guid: 2a653eabf3c66ce43be8e1ad95d6b89f, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6570863873215376079, guid: 2a653eabf3c66ce43be8e1ad95d6b89f, type: 3}
       propertyPath: m_LocalPosition.x

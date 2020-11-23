@@ -8,6 +8,8 @@ public class NewPlayerMovement : MonoBehaviour
 {
     //public 변수
     public float jumpForceMax = 200f; //점프하는 힘의 최대치
+
+    public Sprite gotJumpBarSprite; //점프바의 스프라이트를 받기위한 변수
     public float jumpChargeSpeed = 1f; //점프하는 힘을 더하는 속도
     public float jumpBarLength; //점프바의 길이
     public float xMoveSpeed = 5f; //움직임 속도
@@ -31,7 +33,6 @@ public class NewPlayerMovement : MonoBehaviour
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _collider2D = GetComponent<Collider2D>();
-
         //변수 초기화
         _jumpForce = 0f;
     }
@@ -64,6 +65,7 @@ public class NewPlayerMovement : MonoBehaviour
         _jumpBar.transform.position = _collider2D.transform.position + new Vector3(jumpBarPositionX, jumpBarPositionY, 0);
         _jumpBar.transform.localScale = new Vector3(2, jumpBarLength * 10, 0);
         _jumpBar.GetComponent<SpriteRenderer>().color = new Color(1, 1 - jumpBarLength, 1 - jumpBarLength, 1);
+
     }
     
 
@@ -72,6 +74,7 @@ public class NewPlayerMovement : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Scaffolding") && _rigidbody2D.velocity.y <= 0)
         {
+
             _canJump = true;
         }
     }
@@ -84,6 +87,7 @@ public class NewPlayerMovement : MonoBehaviour
             _direction = Input.GetAxis("Horizontal");
             _canJump = false;
             JumpUp();
+
         }
     }
 
@@ -99,7 +103,6 @@ public class NewPlayerMovement : MonoBehaviour
         }
         else if (!_canJump && (int)_xMove != (int)_direction) //차징중이 아닐때 하늘에 떠있을 때 && 누르는 방향이 점프한 방향과 반대 방향일때
         {
-            Debug.Log("on");
             _rigidbody2D.AddForce(new Vector2(_xMove * xMoveSpeedFly,0));
         }
     }
@@ -131,7 +134,7 @@ public class NewPlayerMovement : MonoBehaviour
         Invoke("SetIsCharge", 0.2f);
         _canJump = false;
     }
-    
+
     private void SetIsCharge()
     {
         _isCharge = false;

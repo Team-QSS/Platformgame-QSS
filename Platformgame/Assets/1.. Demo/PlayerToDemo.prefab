@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 4752205394495659933}
   - component: {fileID: 4752205394495659932}
   - component: {fileID: 4752205394495660002}
-  - component: {fileID: 4752205394495660003}
   m_Layer: 0
   m_Name: PlayerToDemo
   m_TagString: Player
@@ -114,17 +113,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scaffolding: {fileID: 7398703340059987031, guid: 2dd2fdd2d0840854798f3a5f318b82af, type: 3}
-  interval: 5
---- !u!114 &4752205394495660003
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4752205394495660001}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24a943c398ddb62448e97c91ccf47087, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 10
+  intervalX: 0

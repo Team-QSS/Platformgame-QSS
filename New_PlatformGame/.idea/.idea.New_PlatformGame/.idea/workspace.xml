@@ -20,6 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8960b54-a90d-4de4-b602-602f2349088b" name="Default Changelist" comment="">
+
       <change beforePath="$PROJECT_DIR$/.idea/.idea.New_PlatformGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.New_PlatformGame/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.New_PlatformGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.New_PlatformGame/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/0. Scenes/Demo.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/0. Scenes/Demo.unity" afterDir="false" />
@@ -38,28 +39,22 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/1. Script/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1. Script/CameraCtrl.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/1. Script/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/NewPlayerMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1. Script/MissileCtrl.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/1. Script/MonsterCtrl.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../UnityProject/TEST/Assets/Portal/OrangePortal.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/UIScript.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/PauseButtonScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/1. Script/MissileSpawn.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/1. Script/New_Player_Ctrl.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A9810827-DCE3-444A-8E5C-4E9F3F5E0828/f7/c73f0a5b/PlayerPrefs.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/Assets/1. Script/MissileSpawn.cs" />
         <option value="$PROJECT_DIR$/Assets/1. Script/MissileCtrl.cs" />
-        <option value="$PROJECT_DIR$/Assets/1. Script/MonsterCtrl.cs" />
-        <option value="$PROJECT_DIR$/Assets/BlurShader.shader" />
-        <option value="$PROJECT_DIR$/Assets/PauseButtonScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/UIScript.cs" />
         <option value="$PROJECT_DIR$/Assets/1. Script/New_Player_Ctrl.cs" />
-        <option value="$PROJECT_DIR$/Assets/CoinScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/1. Script/GameManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/ScaffoldingScript.cs" />
         <option value="$PROJECT_DIR$/Assets/NewPlayerMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/1. Script/GameManager.cs" />
       </list>
     </option>
   </component>
@@ -73,6 +68,13 @@
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="CodeLensConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -80,22 +82,19 @@
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
-      <option name="selectedOptions">
-        <set />
-      </option>
       <method v="2" />
     </configuration>
     <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
-      <option name="selectedOptions">
-        <set />
-      </option>
       <method v="2" />
     </configuration>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="c8960b54-a90d-4de4-b602-602f2349088b" name="Default Changelist" comment="" />
@@ -104,9 +103,17 @@
       <option name="presentableId" value="Default" />
       <updated>1602671298967</updated>
       <workItem from="1602671303602" duration="896000" />
-      <workItem from="1604476097225" duration="5045000" />
-      <workItem from="1605685578753" duration="12061000" />
-      <workItem from="1605856856599" duration="4265000" />
+      <workItem from="1603872093240" duration="96000" />
+      <workItem from="1603872209446" duration="2128000" />
+      <workItem from="1603875522679" duration="168000" />
+      <workItem from="1603878016721" duration="1712000" />
+      <workItem from="1604478061085" duration="595000" />
+      <workItem from="1604485934393" duration="210000" />
+      <workItem from="1605685744353" duration="5340000" />
+      <workItem from="1605855004762" duration="1291000" />
+      <workItem from="1605856408213" duration="435000" />
+      <workItem from="1605858180320" duration="529000" />
+
     </task>
     <servers />
   </component>
@@ -131,21 +138,13 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="92" y="92" width="1736" height="896" key="VCS.FileHistoryDialog" timestamp="1605854401859">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="703" y="82" key="SettingsEditor" timestamp="1605685818809">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="92" y="92" width="1736" height="896" key="VCS.FileHistoryDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1605854401859" />
-    <state x="552" y="272" key="Vcs.Push.Dialog.v2" timestamp="1605771882842">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="703" y="82" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1605685818809" />
+    <state x="551" y="132" width="974" height="1047" key="dock-window-1" timestamp="1603875647734">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="272" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1605771882842" />
-    <state x="616" y="250" key="run.anything.popup" timestamp="1605855200847">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="616" y="250" key="run.anything.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1605855200847" />
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1605860158951">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1605860158951" />
+    <state x="551" y="132" width="974" height="1047" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1603875647734" />
   </component>
 </project>

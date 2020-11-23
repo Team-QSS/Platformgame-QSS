@@ -46,6 +46,7 @@ public class MonsterCtrl : MonoBehaviour
         {
             Debug.Log($"bomb : {col.name}");
             StartCoroutine(MakeCanNotMove());
+            Destroy(col.gameObject);
         }
     }
 }

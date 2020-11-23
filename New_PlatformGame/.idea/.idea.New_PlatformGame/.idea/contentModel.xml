@@ -13,6 +13,8 @@
           <e p="MonsterCtrl.cs" t="Include" />
           <e p="PlayerCtrl.cs" t="Include" />
           <e p="PlayerCtrlToDemo.cs" t="Include" />
+          <e p="MissileSpawn.cs" t="Include" />
+          <e p="New_Player_Ctrl.cs" t="Include" />
         </e>
         <e p="BlurShader.shader" t="Include" />
         <e p="NewPlayerMovement.cs" t="Include" />
