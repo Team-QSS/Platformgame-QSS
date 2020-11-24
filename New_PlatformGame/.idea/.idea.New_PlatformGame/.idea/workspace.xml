@@ -19,15 +19,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8960b54-a90d-4de4-b602-602f2349088b" name="Default Changelist" comment="">
-
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.New_PlatformGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.New_PlatformGame/.idea/contentModel.xml" afterDir="false" />
+    <list default="true" id="7a2b745f-4494-4e81-9159-2946859a6b6b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.New_PlatformGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.New_PlatformGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/0. Scenes/Demo.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/0. Scenes/Demo.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/0. Scenes/0. Title_Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/0. Scenes/0. Title_Scene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/1. Script/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1. Script/GameManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/1. Script/New_Player_Ctrl.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/1. Script/New_Player_Ctrl.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/2. prefab/Scaffolding.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/2. prefab/Scaffolding.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1. Script/UIFunction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1. Script/UIFunction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/0. Scenes/Demo.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/0. Scenes/Demo.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/NewPlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewPlayerMovement.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,10 +55,11 @@
         <option value="$PROJECT_DIR$/Assets/1. Script/New_Player_Ctrl.cs" />
         <option value="$PROJECT_DIR$/Assets/NewPlayerMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/1. Script/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/1. Script/UIFunction.cs" />
       </list>
     </option>
   </component>
-  <component name="ProjectId" id="1irgoFoet1y2mAVwrG5H3as8fDY" />
+  <component name="ProjectId" id="1kY3scEbDbrEk8Wd5jo0AtxrEeP" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -82,6 +83,9 @@
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
+      <option name="selectedOptions">
+        <set />
+      </option>
       <method v="2" />
     </configuration>
     <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
@@ -137,6 +141,7 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
+
   <component name="WindowStateProjectService">
     <state x="703" y="82" key="SettingsEditor" timestamp="1605685818809">
       <screen x="0" y="0" width="1920" height="1040" />
