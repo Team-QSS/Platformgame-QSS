@@ -15,8 +15,10 @@
           <e p="New_Player_Ctrl.cs" t="Include" />
           <e p="PlayerCtrl.cs" t="Include" />
           <e p="PlayerCtrlToDemo.cs" t="Include" />
+          <e p="UIFunction.cs" t="Include" />
         </e>
         <e p="NewPlayerMovement.cs" t="Include" />
+
       </e>
       <e p="New_PlatformGame.sln" t="IncludeFlat" />
       <e p="obj" t="ExcludeRecursive" />

@@ -106,7 +106,8 @@ public class GameManager : MonoBehaviour
         prevX = _randomXVector3.x;
     }
     
-    void MissileSummoning() //미사일 생성
+    //미사일 생성
+    void MissileSummoning()
     {
         CameraPositionTopRight = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
         Instantiate(Missile, new Vector3(MissileRespawn.x, CameraPositionTopRight.y, 0), Quaternion.identity);
