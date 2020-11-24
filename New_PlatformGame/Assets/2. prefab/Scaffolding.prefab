@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7976498166111858805}
   - component: {fileID: 2021049032158488348}
   - component: {fileID: 6665236060167584321}
+  - component: {fileID: 4411584729872102869}
   m_Layer: 0
   m_Name: Scaffolding
   m_TagString: Scaffolding
@@ -107,5 +108,18 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 0.13, y: 0.16}
   m_EdgeRadius: 0
+--- !u!114 &4411584729872102869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7700327072032568968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22241e3fe137fa443b5c4fecb0fb50db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coinPrefab: {fileID: 3366818260184434938, guid: 51e244c6db5d50d48abd133aac9127d8, type: 3}

@@ -8,6 +8,7 @@ public class NewPlayerMovement : MonoBehaviour
 {
     //public 변수
     public float jumpForceMax = 200f; //점프하는 힘의 최대치
+
     public Sprite gotJumpBarSprite; //점프바의 스프라이트를 받기위한 변수
     public float jumpChargeSpeed = 1f; //점프하는 힘을 더하는 속도
     public float jumpBarLength; //점프바의 길이
@@ -19,8 +20,7 @@ public class NewPlayerMovement : MonoBehaviour
     //private 변수
     private Rigidbody2D _rigidbody2D;
     private Collider2D _collider2D;
-    private GameObject _jumpBar; //점프바 변수
-    private SpriteRenderer _jumpBarSprite; //점프바의 스프라이트 렌더러
+    public GameObject _jumpBar; //점프바 변수
     private float _xMove;
     private Vector2 _getvel; //Move 함수에서 캐릭터의 속도를 받는 변수
     private float _jumpForce; //점프하는 힘 변수
@@ -33,15 +33,6 @@ public class NewPlayerMovement : MonoBehaviour
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _collider2D = GetComponent<Collider2D>();
-
-        //JumpBar 초기 설정
-        _jumpBar = new GameObject("Player JumpBar");
-        _jumpBar.AddComponent<SpriteRenderer>();
-        _jumpBarSprite = _jumpBar.GetComponent<SpriteRenderer>();
-        _jumpBarSprite.sprite = gotJumpBarSprite;
-        _jumpBarSprite.color = Color.white;
-        
-        
         //변수 초기화
         _jumpForce = 0f;
     }
@@ -53,23 +44,37 @@ public class NewPlayerMovement : MonoBehaviour
         {
             Jump();
         }
-        SetJumpBar(_jumpBar, _jumpBarSprite);
+        SetJumpBar();
     }
 
-    private void SetJumpBar(GameObject jumpBar, SpriteRenderer jumpBarSprite) //점프 바 설정
+    private void SetJumpBar() //점프 바 설정
     {
+        Vector3 v = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
+        Vector3 v1 = Camera.main.ScreenToWorldPoint(new Vector3(0, Screen.height, 0));
+
+        if (transform.position.x >= v.x - 1)
+        {
+            Debug.Log("true");
+            jumpBarPositionX = -Mathf.Abs(jumpBarPositionX);
+        }
+        else
+        {
+            jumpBarPositionX = Mathf.Abs(jumpBarPositionX);
+        }
         jumpBarLength = _jumpForce / jumpForceMax; //백분율
-        jumpBar.transform.position = _collider2D.transform.position + new Vector3(jumpBarPositionX, jumpBarPositionY, 0);
-        jumpBar.transform.localScale = new Vector3(2, jumpBarLength * 10, 0);
-        jumpBarSprite.color = new Color(1, 1 - jumpBarLength, 1 - jumpBarLength, 1);
+        _jumpBar.transform.position = _collider2D.transform.position + new Vector3(jumpBarPositionX, jumpBarPositionY, 0);
+        _jumpBar.transform.localScale = new Vector3(2, jumpBarLength * 10, 0);
+        _jumpBar.GetComponent<SpriteRenderer>().color = new Color(1, 1 - jumpBarLength, 1 - jumpBarLength, 1);
+
     }
     
 
 //땅에서 벗어나면 점프할 수 없다
     private void OnCollisionStay2D(Collision2D other)
     {
-        if (other.gameObject.CompareTag("Scaffolding"))
-        {   
+        if (other.gameObject.CompareTag("Scaffolding") && _rigidbody2D.velocity.y <= 0)
+        {
+
             _canJump = true;
         }
     }
@@ -81,6 +86,8 @@ public class NewPlayerMovement : MonoBehaviour
         {
             _direction = Input.GetAxis("Horizontal");
             _canJump = false;
+            JumpUp();
+
         }
     }
 
@@ -108,16 +115,24 @@ public class NewPlayerMovement : MonoBehaviour
             SetjumpForce();
             _direction = Input.GetAxis("Horizontal");
             _isCharge = true;
-            _rigidbody2D.velocity = Vector2.zero;
+            Vector3 v = _rigidbody2D.velocity;
+            v.x = 0;
+            v.z = 0;
+            _rigidbody2D.velocity = v;
         }
 
         if (Input.GetKeyUp(KeyCode.Space))
         {
-            _rigidbody2D.AddForce(new Vector2(_direction * _jumpForce,  _jumpForce * 2));
-            _jumpForce = 0f;
-            Invoke("SetIsCharge", 0.2f);
-            _canJump = false;
+            JumpUp();
         }
+    }
+
+    void JumpUp()
+    {
+        _rigidbody2D.AddForce(new Vector2(_direction * _jumpForce,  _jumpForce * 2));
+        _jumpForce = 0f;
+        Invoke("SetIsCharge", 0.2f);
+        _canJump = false;
     }
 
     private void SetIsCharge()

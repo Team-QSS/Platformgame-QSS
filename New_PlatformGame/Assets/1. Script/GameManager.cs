@@ -36,6 +36,9 @@ public class GameManager : MonoBehaviour
     private Vector3 MissileRespawn;//미사일을 생성하는 곳의 좌표
     private float MissileTime;//미사일 생성 쿨타임
 
+    private float _playerStartYPos;
+    public int score;
+
     void Start()
     {
         CameraPositionTopRight = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width,Screen.height, 0));
@@ -145,4 +148,13 @@ public class GameManager : MonoBehaviour
         _coin += _getCoin;
         PlayerPrefs.SetInt("Coin", _coin);
     }
+    
+    void SetScore()
+    {
+        if ((int) (transform.position.y - _playerStartYPos) > score)
+        {
+            score = (int) (transform.position.y - _playerStartYPos);
+        }
+    }
+    
 }

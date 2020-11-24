@@ -23,9 +23,11 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.New_PlatformGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.New_PlatformGame/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/0. Scenes/0. Title_Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/0. Scenes/0. Title_Scene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/1. Script/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1. Script/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1. Script/New_Player_Ctrl.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1. Script/New_Player_Ctrl.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2. prefab/Scaffolding.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/2. prefab/Scaffolding.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/1. Script/UIFunction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1. Script/UIFunction.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/0. Scenes/Demo.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/0. Scenes/Demo.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/1. Script/New_Player_Ctrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1. Script/New_Player_Ctrl.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/NewPlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewPlayerMovement.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -115,6 +117,7 @@
       <workItem from="1605855004762" duration="1291000" />
       <workItem from="1605856408213" duration="435000" />
       <workItem from="1605858180320" duration="529000" />
+
     </task>
     <servers />
   </component>

@@ -8,7 +8,7 @@ using UnityEngine.Windows.Speech;
 public class MonsterCtrl : MonoBehaviour
 {
     private bool _canMove = true;
-    private float _mobSpeed = 1.5f; //몬스터 속도
+    public float _mobSpeed = 1.5f; //몬스터 속도
     private readonly Vector3 _direction = Vector3.up;
 
     IEnumerator MakeCanNotMove()
