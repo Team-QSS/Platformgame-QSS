@@ -5,6 +5,8 @@ using UnityEditor.Build.Content;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+// UI 적용 함수 모음
+// UIScriptObject에 넣음
 public class UIFunction : MonoBehaviour
 {
     private int _sceneNumber;

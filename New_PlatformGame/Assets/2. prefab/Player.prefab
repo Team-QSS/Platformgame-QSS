@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6570863873215376078}
   - component: {fileID: -1532619846995051940}
   - component: {fileID: -2953024046671889233}
+  - component: {fileID: -8401942315494307339}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -137,19 +138,5 @@ MonoBehaviour:
   intervalX: 0
   MissileReferenceTime: 0
   Missile: {fileID: 0}
---- !u!114 &459517335966500258
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6570863873215376077}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7f999da318e2564eb9fedec7faa03f6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  jumpForceMax: 5
-  gotJumpBarSprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  jumpChargeSpeed: 0.03
-  xMoveSpeed: 0.05
+  MissileSpawn: {fileID: 0}
+  score: 0

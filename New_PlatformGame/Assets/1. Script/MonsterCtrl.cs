@@ -4,11 +4,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Windows.Speech;
 
-// written by Lim Yeonsang
+// 몬스터 조작 스크립트
+// Monster에 넣음
 public class MonsterCtrl : MonoBehaviour
 {
-    private bool _canMove = true;
     public float _mobSpeed = 1.5f; //몬스터 속도
+    private bool _canMove = true;
     private readonly Vector3 _direction = Vector3.up;
 
     IEnumerator MakeCanNotMove()
@@ -27,13 +28,13 @@ public class MonsterCtrl : MonoBehaviour
         }
     }
 
-    //플레이어, 발판과 닿을 경우 닿은 오브젝트 삭제, 장애물과 닿을 경우 몬스터가 잠깐 멈춤 
+    //몬스터가 닿은 오브젝트
     void OnTriggerEnter2D(Collider2D col)
     {
         if (col.CompareTag("Player"))
         {
             Debug.Log($"player : {col.name}");
-            Destroy(col.gameObject);
+            //Destroy(col.gameObject);
         }
 
         if (col.CompareTag("Scaffolding"))

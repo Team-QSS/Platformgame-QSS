@@ -582,7 +582,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &1166848937 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5966649366528094353, guid: b512a2d25c0196540b1144861e59b2db, type: 3}
+  m_CorrespondingSourceObject: {fileID: 783714122730709369, guid: b512a2d25c0196540b1144861e59b2db, type: 3}
   m_PrefabInstance: {fileID: 5966649365379138360}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1166848936}
@@ -1053,7 +1053,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1166848937}
-        m_TargetAssemblyTypeName: UIFunction, Assembly-CSharp
+        m_TargetAssemblyTypeName: _UIFunction, Assembly-CSharp
         m_MethodName: GoNextScene
         m_Mode: 1
         m_Arguments:

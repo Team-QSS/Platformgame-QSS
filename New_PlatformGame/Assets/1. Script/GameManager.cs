@@ -6,7 +6,8 @@ using UnityEngine.UI;
 using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 
-// written by Kim Jimin
+// 
+// Player에 넣음
 public class GameManager : MonoBehaviour
 {
     private const int _coinCost = 10 ; //코인 단위
@@ -36,7 +37,6 @@ public class GameManager : MonoBehaviour
     private Vector3 MissileRespawn;//미사일을 생성하는 곳의 좌표
     private float MissileTime;//미사일 생성 쿨타임
 
-    private float _playerStartYPos;
     public int score;
 
     void Start()
@@ -79,9 +79,8 @@ public class GameManager : MonoBehaviour
         {
             SaveScore();
         }
-        SetScore();
     }
-
+    
     private void FixedUpdate()
     {
         MissileTime += Time.deltaTime;
@@ -95,7 +94,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    //발판 생성 함수
+    //발판 생성 함수 -> 플레이
     void SpawnScaffolding()
     {
         _randomXVector3.y += intervalY;
@@ -109,25 +108,21 @@ public class GameManager : MonoBehaviour
         prevX = _randomXVector3.x;
     }
     
-    //미사일 생성
+    //미사일 생성 -> 플레이
     void MissileSummoning()
     {
         CameraPositionTopRight = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
         Instantiate(Missile, new Vector3(MissileRespawn.x, CameraPositionTopRight.y, 0), Quaternion.identity);
     }
 
+    // 점수 저장 -> 저장
     void SaveScore()
     {
         _maxScore = (int) (_score - _palyerStartY + 1);
         PlayerPrefs.SetInt("Best Score", _maxScore);
     }
 
-    void SetScore()
-    {
-        _bestScore.text = "Best Score: " + _maxScore.ToString();
-        _myScore.text = "Score: " + _score.ToString();
-    }
-
+    // 점수 불러오기 -> 저장
     void ScoreInit()
     {
         _maxScore = 0;
@@ -143,18 +138,17 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    // 코인 저장 -> 저장
     private void SaveCoin()
     {
         _coin += _getCoin;
-        PlayerPrefs.SetInt("Coin", _coin);
+        PlayerPrefs.SetInt("-", _coin);
     }
     
+    // 점수 표시 -> UI
     void SetScore()
     {
-        if ((int) (transform.position.y - _playerStartYPos) > score)
-        {
-            score = (int) (transform.position.y - _playerStartYPos);
-        }
+        _bestScore.text = "Best Score: " + _maxScore.ToString();
+        _myScore.text = "Score: " + _score.ToString();
     }
-    
 }

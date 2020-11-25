@@ -1,107 +1,163 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
-using UnityEngine.Serialization;
-using UnityEngine.UIElements;
-    
-// written by Kim Jinguen
+
+// 플레이어 조작 스크립트
+// Player에 넣음
 public class PlayerCtrl : MonoBehaviour
 {
-    //public 변수 
-    public float jumpForceMax = 5f;
-    public Sprite gotJumpBarSprite;
-    public float jumpChargeSpeed = 0.03f;
-    public float xMoveSpeed = 0.05f;
+    //public 변수
+    public float jumpForceMax = 200f; //점프하는 힘의 최대치
+
+    public Sprite gotJumpBarSprite; //점프바의 스프라이트를 받기위한 변수
+    public float jumpChargeSpeed = 1f; //점프하는 힘을 더하는 속도
+    public float jumpBarLength; //점프바의 길이
+    public float xMoveSpeed = 5f; //움직임 속도
+    public float xMoveSpeedFly = 1f; //공중에 떠있을때 움직임 속도
+    public float jumpBarPositionX = 1f; //점프바의 위치 X (캐릭터 기준)
+    public float jumpBarPositionY = 1f; //점프바의 위치 Y (캐릭터 기준)
+    public GameObject jumpBar; //점프바 변수
 
     //private 변수
     private Rigidbody2D _rigidbody2D;
     private Collider2D _collider2D;
-    private GameObject _jumpBar;
-    private SpriteRenderer _jumpBarSprite;
-    private float _jumpBarLength;
-    private float _horizontal;
-    private float _jumpForce;
-    private Vector2 _moveControl;
-    private bool _isJumpCharge = false;
-    private bool _canJump = false;
+    private float _xMove;
+    private Vector2 _getvel; //Move 함수에서 캐릭터의 속도를 받는 변수
+    private float _jumpForce; //점프하는 힘 변수
+    private bool _isCharge; //점프하는 힘을 모으고 있는걸 확인하는 변수
+    private bool _canJump; //땅에 있을때만 true
+    private float _direction; //점프한 방향
+    private bool _isAddJumpForceReverse; //점프하는 힘을 모으는 방향이 역방향인지 확인하는 변수
 
     void Start()
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _collider2D = GetComponent<Collider2D>();
-
-        //JumpBar 초기 설정
-        _jumpBar = new GameObject("Player JumpBar");
-        _jumpBar.AddComponent<SpriteRenderer>();
-        _jumpBarSprite = _jumpBar.GetComponent<SpriteRenderer>();
-        _jumpBarSprite.sprite = gotJumpBarSprite;
-        _jumpBarSprite.color = Color.white;
+        //변수 초기화
+        _jumpForce = 0f;
     }
 
     void Update()
     {
-        _moveControl = _rigidbody2D.velocity;
-        _horizontal = Input.GetAxis("Horizontal");
-        if (Input.GetKeyUp(KeyCode.Space) && _canJump) //스페이스바 떼기
+        Move();
+        if (_canJump)
         {
-            _rigidbody2D.velocity = Vector2.zero;
-            _rigidbody2D.AddForce(new Vector2(1 * _horizontal, 2) * _jumpForce, ForceMode2D.Impulse);
-            _jumpForce = 0;
-            _isJumpCharge = false;
+            Jump();
         }
+        SetJumpBar();
+    }
 
-        if (Input.GetKey(KeyCode.Space) && _canJump) //스페이스바 누르고 있을때
+    private void SetJumpBar() //점프 바 설정
+    {
+        Vector3 v = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
+
+        if (transform.position.x >= v.x - 1)
         {
-            _isJumpCharge = true;
-            _rigidbody2D.velocity = Vector2.zero;
-            if (_jumpForce <= jumpForceMax)
-            {
-                _jumpForce += jumpChargeSpeed;
-            }
+            Debug.Log("true");
+            jumpBarPositionX = -Mathf.Abs(jumpBarPositionX);
         }
-
-        //점프 바 설정
-        SetJumpBar(_jumpBar, _jumpBarSprite);
-
-        //캐릭터 움직임
-        if ((Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)) && !_isJumpCharge && _canJump)
+        else
         {
-            transform.position = new Vector3(transform.position.x + xMoveSpeed * _horizontal, transform.position.y,
-                transform.position.z);
+            jumpBarPositionX = Mathf.Abs(jumpBarPositionX);
         }
-
-
-        if (_isJumpCharge)
-        {
-            Vector2 v = _rigidbody2D.velocity;
-            v.x = 0f;
-            _rigidbody2D.velocity = v;
-        }
+        jumpBarLength = _jumpForce / jumpForceMax; //백분율
+        jumpBar.transform.position = _collider2D.transform.position + new Vector3(jumpBarPositionX, jumpBarPositionY, 0);
+        jumpBar.transform.localScale = new Vector3(2, jumpBarLength * 10, 0);
+        jumpBar.GetComponent<SpriteRenderer>().color = new Color(1, 1 - jumpBarLength, 1 - jumpBarLength, 1);
 
     }
 
+    //땅에서 벗어나면 점프할 수 없다
     private void OnCollisionStay2D(Collision2D other)
     {
-        if (other.gameObject.CompareTag("Scaffolding"))
+        if (other.gameObject.CompareTag("Scaffolding") && _rigidbody2D.velocity.y <= 0)
         {
+
             _canJump = true;
         }
     }
 
+    //땅에서 벗어났을때 변수 조정
     private void OnCollisionExit2D(Collision2D other)
     {
         if (other.gameObject.CompareTag("Scaffolding"))
         {
+            _direction = Input.GetAxis("Horizontal");
             _canJump = false;
+            JumpUp();
+
         }
     }
 
-    private void SetJumpBar(GameObject jumpBar, SpriteRenderer jumpBarSprite)
+    private void Move() //움직임 관리
     {
-        _jumpBarLength = _jumpForce / jumpForceMax; //백분율
-        jumpBar.transform.position = _collider2D.transform.position + new Vector3(1, 1, 0);
-        jumpBar.transform.localScale = new Vector3(2, _jumpBarLength * 10, 0);
-        jumpBarSprite.color = new Color(1, 1 - _jumpBarLength, 1 - _jumpBarLength, 1);
+        _xMove = Input.GetAxis("Horizontal");
+        if (!_isCharge && _canJump) //점프 차징중이거나 하늘에 떠있었을때 if문 진입 못함
+        {
+            _getvel = _rigidbody2D.velocity;
+            _getvel.x = _xMove * xMoveSpeed;
+            _rigidbody2D.velocity = _getvel;
+        }
+        else if (!_canJump && (int)_xMove != (int)_direction) //차징중이 아닐때 하늘에 떠있을 때 && 누르는 방향이 점프한 방향과 반대 방향일때
+        {
+            _rigidbody2D.AddForce(new Vector2(_xMove * xMoveSpeedFly,0));
+        }
+    }
+
+    //점프 함수
+    private void Jump()
+    {
+        if (Input.GetKey(KeyCode.Space))
+        {
+            SetjumpForce();
+            _direction = Input.GetAxis("Horizontal");
+            _isCharge = true;
+            Vector3 v = _rigidbody2D.velocity;
+            v.x = 0;
+            v.z = 0;
+            _rigidbody2D.velocity = v;
+        }
+
+        if (Input.GetKeyUp(KeyCode.Space))
+        {
+            JumpUp();
+        }
+    }
+
+    void JumpUp()
+    {
+        _rigidbody2D.AddForce(new Vector2(_direction * _jumpForce,  _jumpForce * 2));
+        _jumpForce = 0f;
+        Invoke("SetIsCharge", 0.2f);
+        _canJump = false;
+    }
+
+    private void SetIsCharge()
+    {
+        _isCharge = false;
+    }
+
+    //점프하는 힘을 설정한다
+    private void SetjumpForce()
+    {
+        if (_jumpForce <= jumpForceMax && !_isAddJumpForceReverse) //점프하는 힘이 최대치 보다 작고 힘이 올라가는 방향이 정방향일때
+        {
+            _jumpForce += jumpChargeSpeed; //힘이 늘어남
+        }
+        else if (_isAddJumpForceReverse && _jumpForce >= 0 && _isAddJumpForceReverse) //점프하는 힘이 0보다 크고 힘이 차는 방향이 역방향일때
+        {
+            _jumpForce -= jumpChargeSpeed; //힘이 줄어듬
+        }
+
+        if (_jumpForce >= jumpForceMax) //점프하는 힘이 최대치보다 크거나 같으면
+        {
+            _isAddJumpForceReverse = true; //힘이 차는 방향은 역방향
+        }
+        else if (_jumpForce <= 0) //점프하는 힘이 0보다 작으면
+        {
+            _isAddJumpForceReverse = false; //힘이 차는 방향은 정방향
+        }
     }
 }

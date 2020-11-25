@@ -3,7 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// written by Lim Yeonsang
+// 미사일 조작 스크립트
+// Missile에 넣음
 public class MissileCtrl : MonoBehaviour
 {
     public float _bombSpeed; //미사일 속도
@@ -12,7 +13,7 @@ public class MissileCtrl : MonoBehaviour
     
     private readonly Vector3 _direction = Vector3.down;
 
-    //미사일움직임
+    //미사일 움직임
     private void FixedUpdate()
     {
         transform.Translate(_direction * (_bombSpeed * Time.deltaTime));

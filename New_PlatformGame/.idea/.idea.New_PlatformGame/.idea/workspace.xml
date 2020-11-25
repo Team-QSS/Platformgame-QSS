@@ -20,15 +20,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7a2b745f-4494-4e81-9159-2946859a6b6b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.New_PlatformGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.New_PlatformGame/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.New_PlatformGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.New_PlatformGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/0. Scenes/0. Title_Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/0. Scenes/0. Title_Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/0. Scenes/Demo.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/0. Scenes/Demo.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/0. Scenes/New Scene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/0. Scenes/New Scene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1. Script/CameraCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1. Script/CameraCtrl.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/1. Script/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1. Script/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1. Script/MissileCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1. Script/MissileCtrl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1. Script/MissileSpawn.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1. Script/MissileSpawn.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1. Script/MonsterCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1. Script/MonsterCtrl.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/1. Script/New_Player_Ctrl.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/1. Script/New_Player_Ctrl.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2. prefab/Scaffolding.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/2. prefab/Scaffolding.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1. Script/PlayerCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1. Script/PlayerCtrl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1. Script/PlayerCtrl.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1. Script/PlayerCtrl.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1. Script/PlayerCtrlToDemo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1. Script/PlayerCtrlToDemo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/1. Script/UIFunction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1. Script/UIFunction.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/0. Scenes/Demo.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/0. Scenes/Demo.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewPlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewPlayerMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2. prefab/MissileSpawn.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2. prefab/MissileSpawn.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2. prefab/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/2. prefab/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2. prefab/UIScriptObject.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/2. prefab/UIScriptObject.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BlurShader.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BlurShader.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NewPlayerMovement.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NewPlayerMovement.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PauseButtonScript.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PauseButtonScript.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PausePanelMaterial.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PausePanelMaterial.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScaffoldingScript.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScaffoldingScript.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UIScript.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UIScript.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,21 +67,29 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/1. Script/CameraCtrl.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/1. Script/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/NewPlayerMovement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A9810827-DCE3-444A-8E5C-4E9F3F5E0828/12/ddb83f4c/Component.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/1. Script/PlayerCtrl.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/1. Script/UIFunction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1. Script/MissileCtrl.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/1. Script/MissileSpawn.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/1. Script/New_Player_Ctrl.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A9810827-DCE3-444A-8E5C-4E9F3F5E0828/f7/c73f0a5b/PlayerPrefs.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/1. Script/MissileSpawn.cs" />
-        <option value="$PROJECT_DIR$/Assets/1. Script/MissileCtrl.cs" />
-        <option value="$PROJECT_DIR$/Assets/1. Script/New_Player_Ctrl.cs" />
         <option value="$PROJECT_DIR$/Assets/NewPlayerMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/1. Script/MissileSpawn.cs" />
+        <option value="$PROJECT_DIR$/Assets/1. Script/New_Player_Ctrl.cs" />
+        <option value="$PROJECT_DIR$/Assets/1. Script/CameraCtrl.cs" />
         <option value="$PROJECT_DIR$/Assets/1. Script/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/1. Script/PlayerCtrlToDemo.cs" />
+        <option value="$PROJECT_DIR$/Assets/1. Script/MissileSpawnPointer.cs" />
+        <option value="$PROJECT_DIR$/Assets/1. Script/MissileCtrl.cs" />
+        <option value="$PROJECT_DIR$/Assets/1. Script/_UIFunction.cs" />
+        <option value="$PROJECT_DIR$/Assets/1. Script/_GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/1. Script/PlayerCtrl.cs" />
+        <option value="$PROJECT_DIR$/Assets/1. Script/MonsterCtrl.cs" />
+        <option value="$PROJECT_DIR$/Assets/1. Script/_PauseButtonScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/1. Script/_ScaffoldingScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/1. Script/_UIScript.cs" />
         <option value="$PROJECT_DIR$/Assets/1. Script/UIFunction.cs" />
       </list>
     </option>
@@ -92,16 +127,19 @@
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
+      <option name="selectedOptions">
+        <set />
+      </option>
       <method v="2" />
     </configuration>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c8960b54-a90d-4de4-b602-602f2349088b" name="Default Changelist" comment="" />
+      <changelist id="7a2b745f-4494-4e81-9159-2946859a6b6b" name="Default Changelist" comment="" />
       <created>1602671298967</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -117,7 +155,9 @@
       <workItem from="1605855004762" duration="1291000" />
       <workItem from="1605856408213" duration="435000" />
       <workItem from="1605858180320" duration="529000" />
-
+      <workItem from="1606220577822" duration="5453000" />
+      <workItem from="1606290200416" duration="85000" />
+      <workItem from="1606290311295" duration="4849000" />
     </task>
     <servers />
   </component>
@@ -141,15 +181,18 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
-
   <component name="WindowStateProjectService">
     <state x="703" y="82" key="SettingsEditor" timestamp="1605685818809">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="703" y="82" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1605685818809" />
-    <state x="551" y="132" width="974" height="1047" key="dock-window-1" timestamp="1603875647734">
+    <state x="92" y="92" width="739" height="856" key="VCS.FileHistoryDialog" timestamp="1606224558854">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="551" y="132" width="974" height="1047" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1603875647734" />
+    <state x="92" y="92" width="739" height="856" key="VCS.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606224558854" />
+    <state x="833" y="247" width="1893" height="1027" key="dock-window-1" timestamp="1606291135425">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="833" y="247" width="1893" height="1027" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1606291135425" />
   </component>
 </project>
