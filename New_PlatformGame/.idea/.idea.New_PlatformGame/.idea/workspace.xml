@@ -20,42 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7a2b745f-4494-4e81-9159-2946859a6b6b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.New_PlatformGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.New_PlatformGame/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.New_PlatformGame/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.New_PlatformGame/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.New_PlatformGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.New_PlatformGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/0. Scenes/Demo.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/0. Scenes/Demo.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/0. Scenes/New Scene.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/0. Scenes/New Scene.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/1. Script/CameraCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1. Script/CameraCtrl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/1. Script/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1. Script/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/1. Script/MissileCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1. Script/MissileCtrl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/1. Script/MissileSpawn.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/1. Script/MissileSpawn.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/1. Script/MonsterCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1. Script/MonsterCtrl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/1. Script/New_Player_Ctrl.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/1. Script/New_Player_Ctrl.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/1. Script/PlayerCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1. Script/PlayerCtrl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/1. Script/PlayerCtrl.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1. Script/PlayerCtrl.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/1. Script/PlayerCtrlToDemo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1. Script/PlayerCtrlToDemo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/1. Script/UIFunction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1. Script/UIFunction.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2. prefab/MissileSpawn.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2. prefab/MissileSpawn.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2. prefab/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/2. prefab/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2. prefab/UIScriptObject.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/2. prefab/UIScriptObject.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BlurShader.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BlurShader.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewPlayerMovement.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewPlayerMovement.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PauseButtonScript.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PauseButtonScript.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PausePanelMaterial.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PausePanelMaterial.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScaffoldingScript.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScaffoldingScript.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIScript.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIScript.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,7 +123,7 @@
       <workItem from="1605858180320" duration="529000" />
       <workItem from="1606220577822" duration="5453000" />
       <workItem from="1606290200416" duration="85000" />
-      <workItem from="1606290311295" duration="4849000" />
+      <workItem from="1606290311295" duration="5627000" />
     </task>
     <servers />
   </component>
