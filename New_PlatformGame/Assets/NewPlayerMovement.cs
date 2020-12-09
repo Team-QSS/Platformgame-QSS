@@ -87,7 +87,6 @@ public class NewPlayerMovement : MonoBehaviour
             _direction = Input.GetAxis("Horizontal");
             _canJump = false;
             JumpUp();
-
         }
     }
 
@@ -161,4 +160,5 @@ public class NewPlayerMovement : MonoBehaviour
             _isAddJumpForceReverse = false; //힘이 차는 방향은 정방향
         }
     }
+    
 }

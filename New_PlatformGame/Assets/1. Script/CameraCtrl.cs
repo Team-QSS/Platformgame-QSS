@@ -27,7 +27,7 @@ public class CameraCtrl : MonoBehaviour
 
         if (objectToFollow == null)
         {
-            GameOver();
+            Time.timeScale = 0;
         }
     }
 

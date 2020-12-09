@@ -23,7 +23,7 @@ public class UIScript : MonoBehaviour
 
     void SetScore()
     {
-        _score = player.GetComponent<GameManager>().score;
+        _score = player.GetComponent<GameManager>()._score;
         scoreText.text = _score + "M";
     }
 }

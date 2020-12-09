@@ -13,8 +13,6 @@ public class GameManager : MonoBehaviour
     private int _getCoin; //플레이어가 얻은 코인
     private int _coin; //플레이어가 지니고 있는 총 코인 
 
-    private Text _bestScore;//최고기록
-    private Text _myScore;//내 기록
     
     private float _distance;
     private Vector3 _randomXVector3;
@@ -24,7 +22,7 @@ public class GameManager : MonoBehaviour
     private float intervalY;//Y 간격
     private float _palyerStartY; //플레이어의 시작 Y값을 가져옴
     private int _maxScore; //최고점수
-    private int _score;
+    public int _score;
 
     [FormerlySerializedAs("_Scaffolding")] public GameObject scaffolding; //발판 오브젝트
     public float intervalX; //이전 발판의 x값과 현재 발판의 x값 사이의 최소 거리
@@ -37,8 +35,6 @@ public class GameManager : MonoBehaviour
     private float MissileTime;//미사일 생성 쿨타임
 
     private float _playerStartYPos;
-    public int score;
-
     void Start()
     {
         CameraPositionTopRight = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width,Screen.height, 0));
@@ -51,8 +47,6 @@ public class GameManager : MonoBehaviour
         MissileTime = 0;
         _palyerStartY = transform.position.y;
         _maxScore = PlayerPrefs.GetInt("Best Score", 0);
-        _bestScore = GameObject.Find("BestScore").GetComponent<Text>();
-        _myScore = GameObject.Find("MyScore").GetComponent<Text>();
         _coin = PlayerPrefs.GetInt("Coin", 0);
         _getCoin = 0;
     }
@@ -79,7 +73,6 @@ public class GameManager : MonoBehaviour
         {
             SaveScore();
         }
-        SetScore();
     }
 
     private void FixedUpdate()
@@ -122,18 +115,6 @@ public class GameManager : MonoBehaviour
         PlayerPrefs.SetInt("Best Score", _maxScore);
     }
 
-    void SetScore()
-    {
-        _bestScore.text = "Best Score: " + _maxScore.ToString();
-        _myScore.text = "Score: " + _score.ToString();
-    }
-
-    void ScoreInit()
-    {
-        _maxScore = 0;
-        PlayerPrefs.SetInt("Best Score", _maxScore);
-    }
-    
     private void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.CompareTag("Coin"))
@@ -147,14 +128,7 @@ public class GameManager : MonoBehaviour
     {
         _coin += _getCoin;
         PlayerPrefs.SetInt("Coin", _coin);
-    }
-    
-    void SetScore()
-    {
-        if ((int) (transform.position.y - _playerStartYPos) > score)
-        {
-            score = (int) (transform.position.y - _playerStartYPos);
-        }
+        Debug.Log(_coin);
     }
     
 }

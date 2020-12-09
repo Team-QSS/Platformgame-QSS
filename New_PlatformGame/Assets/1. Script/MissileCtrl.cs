@@ -23,7 +23,8 @@ public class MissileCtrl : MonoBehaviour
     {
         if (col.gameObject.CompareTag("Player"))
         {
-            Destroy(col.gameObject);
+            Time.timeScale = 0;
+            //Destroy(col.gameObject);
         }
     }
 }

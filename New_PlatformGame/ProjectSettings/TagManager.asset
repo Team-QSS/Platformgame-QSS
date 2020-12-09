@@ -8,6 +8,7 @@ TagManager:
   - Bomb
   - Ground
   - Scaffolding
+  - Coin
   layers:
   - Default
   - TransparentFX
