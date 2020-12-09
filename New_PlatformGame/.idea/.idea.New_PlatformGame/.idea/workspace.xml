@@ -20,8 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7a2b745f-4494-4e81-9159-2946859a6b6b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.New_PlatformGame/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.New_PlatformGame/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.New_PlatformGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.New_PlatformGame/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.New_PlatformGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.New_PlatformGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/0. Scenes/Demo.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/0. Scenes/Demo.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1. Script/CameraCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1. Script/CameraCtrl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1. Script/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1. Script/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1. Script/MonsterCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1. Script/MonsterCtrl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2. prefab/Coin.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/2. prefab/Coin.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2. prefab/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/2. prefab/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NewPlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewPlayerMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UIScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UIScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,10 +41,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/1. Script/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1. Script/CameraCtrl.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A9810827-DCE3-444A-8E5C-4E9F3F5E0828/12/ddb83f4c/Component.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/1. Script/PlayerCtrl.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/1. Script/UIFunction.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/NewPlayerMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1. Script/MissileCtrl.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -44,19 +52,12 @@
         <option value="$PROJECT_DIR$/Assets/NewPlayerMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/1. Script/MissileSpawn.cs" />
         <option value="$PROJECT_DIR$/Assets/1. Script/New_Player_Ctrl.cs" />
-        <option value="$PROJECT_DIR$/Assets/1. Script/CameraCtrl.cs" />
-        <option value="$PROJECT_DIR$/Assets/1. Script/GameManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/1. Script/PlayerCtrlToDemo.cs" />
-        <option value="$PROJECT_DIR$/Assets/1. Script/MissileSpawnPointer.cs" />
-        <option value="$PROJECT_DIR$/Assets/1. Script/MissileCtrl.cs" />
-        <option value="$PROJECT_DIR$/Assets/1. Script/_UIFunction.cs" />
-        <option value="$PROJECT_DIR$/Assets/1. Script/_GameManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/1. Script/PlayerCtrl.cs" />
-        <option value="$PROJECT_DIR$/Assets/1. Script/MonsterCtrl.cs" />
-        <option value="$PROJECT_DIR$/Assets/1. Script/_PauseButtonScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/1. Script/_ScaffoldingScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/1. Script/_UIScript.cs" />
         <option value="$PROJECT_DIR$/Assets/1. Script/UIFunction.cs" />
+        <option value="$PROJECT_DIR$/Assets/UIScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/1. Script/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/NewPlayerMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/1. Script/MonsterCtrl.cs" />
+        <option value="$PROJECT_DIR$/Assets/1. Script/CameraCtrl.cs" />
       </list>
     </option>
   </component>
@@ -121,9 +122,9 @@
       <workItem from="1605855004762" duration="1291000" />
       <workItem from="1605856408213" duration="435000" />
       <workItem from="1605858180320" duration="529000" />
-      <workItem from="1606220577822" duration="5453000" />
-      <workItem from="1606290200416" duration="85000" />
-      <workItem from="1606290311295" duration="5627000" />
+      <workItem from="1606289801300" duration="149000" />
+      <workItem from="1606290219612" duration="14000" />
+      <workItem from="1607507397803" duration="1801000" />
     </task>
     <servers />
   </component>
@@ -152,11 +153,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="703" y="82" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1605685818809" />
-    <state x="92" y="92" width="739" height="856" key="VCS.FileHistoryDialog" timestamp="1606224558854">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="92" y="92" width="1736" height="896" key="VCS.FileHistoryDialog" timestamp="1607507740586">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="92" y="92" width="739" height="856" key="VCS.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606224558854" />
-    <state x="833" y="247" width="1893" height="1027" key="dock-window-1" timestamp="1606291135425">
+    <state x="92" y="92" width="1736" height="896" key="VCS.FileHistoryDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1607507740586" />
+    <state x="551" y="132" width="974" height="1047" key="dock-window-1" timestamp="1603875647734">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="833" y="247" width="1893" height="1027" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1606291135425" />

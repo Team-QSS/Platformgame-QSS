@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 // 카메라 조작 스크립트
-// Main Camera에 넣음 
+// Main Camera에 넣음
 public class CameraCtrl : MonoBehaviour
 {
     private Transform _objectToFollowTransform;
@@ -23,5 +23,15 @@ public class CameraCtrl : MonoBehaviour
         _followObjectY = _objectToFollowTransform.position.y;
         transform.position = Vector3.Lerp(transform.position, new Vector3(transform.position.x, _followObjectY,
             -10), moveSpeed * Time.deltaTime);
+
+        if (objectToFollow == null)
+        {
+            Time.timeScale = 0;
+        }
+    }
+
+    private void GameOver()
+    {
+        //게임 끝내기
     }
 }

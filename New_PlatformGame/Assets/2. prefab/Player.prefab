@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 6570863873215376078}
   - component: {fileID: -1532619846995051940}
   - component: {fileID: -2953024046671889233}
-  - component: {fileID: -8401942315494307339}
+  - component: {fileID: 229245262}
+  - component: {fileID: 229245263}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -121,8 +122,29 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!114 &-8401942315494307339
+  m_Constraints: 4
+--- !u!114 &229245262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6570863873215376077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4100d98dd755474992cd1d62c53c426, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  jumpForceMax: 280
+  gotJumpBarSprite: {fileID: 0}
+  jumpChargeSpeed: 5
+  jumpBarLength: 1
+  xMoveSpeed: 3
+  xMoveSpeedFly: 2
+  jumpBarPositionX: 1
+  jumpBarPositionY: 1
+  _jumpBar: {fileID: 0}
+--- !u!114 &229245263
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -132,11 +154,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 56e95be84676c904ea94dedffe5e3d8c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   scaffolding: {fileID: 7700327072032568968, guid: 596c84f3a885cec4b8d1a8d2548313a1, type: 3}
-  intervalX: 0
-  MissileReferenceTime: 0
-  Missile: {fileID: 0}
+  intervalX: 3
+  MissileReferenceTime: 5
+  Missile: {fileID: 6277146071714996377, guid: 924272ee8ce1aa94db6a08c8ab540a0c, type: 3}
   MissileSpawn: {fileID: 0}
   score: 0

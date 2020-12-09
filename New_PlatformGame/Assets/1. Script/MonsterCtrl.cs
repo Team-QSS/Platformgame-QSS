@@ -34,7 +34,8 @@ public class MonsterCtrl : MonoBehaviour
         if (col.CompareTag("Player"))
         {
             Debug.Log($"player : {col.name}");
-            //Destroy(col.gameObject);
+            /*Destroy(col.gameObject);*/
+            Time.timeScale = 0;
         }
 
         if (col.CompareTag("Scaffolding"))
