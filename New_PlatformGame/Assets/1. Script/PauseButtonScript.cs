@@ -12,7 +12,6 @@ public class PauseButtonScript : MonoBehaviour
     public GameObject mainMenuButton;
     public GameObject settingButton;
 
-    // Start is called before the first frame update
     void Start()
     {
         GetComponent<Button>().onClick.AddListener(Pause);
@@ -20,12 +19,6 @@ public class PauseButtonScript : MonoBehaviour
         returnButton.GetComponent<Button>().onClick.AddListener(Play);
         settingButton.GetComponent<Button>().onClick.AddListener(Settings);
         mainMenuButton.GetComponent<Button>().onClick.AddListener(GotoMainMenu);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     private void Pause()

@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// 테스트용 플레이어 조작 스크립트
+// PlayerToDemo에 넣음
 public class PlayerCtrlToDemo : MonoBehaviour
 {
     private float _horizontal, _vertical;

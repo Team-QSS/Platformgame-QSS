@@ -49,8 +49,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/Assets/NewPlayerMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/1. Script/MissileSpawn.cs" />
-        <option value="$PROJECT_DIR$/Assets/1. Script/MissileCtrl.cs" />
         <option value="$PROJECT_DIR$/Assets/1. Script/New_Player_Ctrl.cs" />
         <option value="$PROJECT_DIR$/Assets/1. Script/UIFunction.cs" />
         <option value="$PROJECT_DIR$/Assets/UIScript.cs" />
@@ -160,6 +160,6 @@
     <state x="551" y="132" width="974" height="1047" key="dock-window-1" timestamp="1603875647734">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="551" y="132" width="974" height="1047" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1603875647734" />
+    <state x="833" y="247" width="1893" height="1027" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1606291135425" />
   </component>
 </project>

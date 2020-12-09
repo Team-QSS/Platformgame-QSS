@@ -133,8 +133,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a4100d98dd755474992cd1d62c53c426, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   jumpForceMax: 280
   gotJumpBarSprite: {fileID: 0}
   jumpChargeSpeed: 5
@@ -154,8 +154,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 56e95be84676c904ea94dedffe5e3d8c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   scaffolding: {fileID: 7700327072032568968, guid: 596c84f3a885cec4b8d1a8d2548313a1, type: 3}
   intervalX: 3
   MissileReferenceTime: 5

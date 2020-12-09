@@ -3,7 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MissileSpawn : MonoBehaviour
+// 미사일 위치 포인터 조작 스크립트
+// MissileSpawnPoint에 넣음
+public class MissileSpawnPointer: MonoBehaviour
 {
     private Vector3 CameraPositionTopRight;
     private Transform transform;

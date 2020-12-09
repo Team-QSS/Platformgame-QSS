@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2827060656371909579}
   - component: {fileID: 3000572981374464839}
   m_Layer: 0
-  m_Name: MissileSpawn
+  m_Name: MissileSpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
